@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>RakshAI | Protective Intelligence</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#007aff',
+            secondary: '#8e8e93',
+            surface: 'rgba(10, 10, 15, 0.9)',
+            background: '#000000',
+          },
+          fontFamily: {
+            sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"SF Pro Text"', 'Roboto', 'sans-serif'],
+          },
+          borderRadius: {
+            'apple': '1.5rem',
+            'apple-lg': '2.5rem',
+            'pill': '9999px',
+          },
+          boxShadow: {
+            'apple-pill': '0 12px 40px rgba(0, 0, 0, 0.5), inset 0 0.5px 1px rgba(255, 255, 255, 0.1)',
+            'apple-card': '0 40px 100px rgba(0, 0, 0, 0.8)',
+          }
+        },
+      },
+    };
+  </script>
+  <style>
+    :root {
+      /* Fluid Typography and Spacing */
+      --text-xs: clamp(0.75rem, 0.7vw + 0.5rem, 0.9rem);
+      --text-sm: clamp(0.85rem, 0.8vw + 0.6rem, 1.05rem);
+      --text-base: clamp(1rem, 1vw + 0.6rem, 1.2rem);
+      --text-lg: clamp(1.15rem, 1.3vw + 0.8rem, 1.5rem);
+      --text-xl: clamp(1.3rem, 1.6vw + 1rem, 2rem);
+      --text-2xl: clamp(1.6rem, 2.8vw + 1rem, 2.8rem);
+      --text-5xl: clamp(2.5rem, 6vw + 1.5rem, 5.5rem);
+
+      --padding-standard: clamp(1.5rem, 4vw, 3.5rem);
+      --gap-standard: clamp(1.2rem, 2.5vw, 2.5rem);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow: hidden;
+      /* Desktop default */
+      -webkit-font-smoothing: antialiased;
+      letter-spacing: -0.01em;
+      font-size: var(--text-base);
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Mobile Override for Body/Scroll */
+    @media (max-width: 768px) {
+      body {
+        overflow-y: auto;
+        /* Allow body scroll on mobile if needed, or controlled by wrapper */
+        height: 100%;
+        position: fixed;
+        /* Prevent elastic scrolling on body, handle in wrapper */
+        overflow: hidden;
+      }
+    }
+
+    .blur-glass {
+      backdrop-filter: blur(80px) saturate(220%);
+      -webkit-backdrop-filter: blur(80px) saturate(220%);
+      background-color: rgba(10, 10, 15, 0.85);
+    }
+
+    .header-glass {
+      backdrop-filter: blur(50px) saturate(180%);
+      -webkit-backdrop-filter: blur(50px) saturate(180%);
+      background-color: rgba(0, 0, 0, 0.6);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    ::-webkit-scrollbar {
+      width: 0px;
+      /* Hide scrollbars for cleaner mobile look */
+      background: transparent;
+    }
+
+    input,
+    select,
+    textarea {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+      font-size: var(--text-base);
+      color: white;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(0, 122, 255, 0.6);
+      outline: none;
+    }
+
+    .mobile-scroll-container {
+      height: 100%;
+      width: 100%;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
+      padding-bottom: 120px;
+      /* Space for bottom nav */
+    }
+
+    /* Fluid Helper Classes */
+    .fluid-padding {
+      padding: var(--padding-standard);
+    }
+
+    .fluid-gap {
+      gap: var(--gap-standard);
+    }
+
+    .fluid-text-5xl {
+      font-size: var(--text-5xl);
+    }
+
+    .fluid-text-lg {
+      font-size: var(--text-lg);
+    }
+
+    /* Safe Area for iPhone X+ */
+    .pb-safe {
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+  </style>
+
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.29.2",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-Q7aoVyU7.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
