@@ -4,7 +4,8 @@
 
 RakshAI is a cinematic, privacy-first frontend application designed to identify fraud, misinformation, and psychological manipulation in real-time. Built with Apple-grade aesthetics and fluid animations, it serves as a protective layer between the user and digital threats.
 
-Visit and use: bit.ly/RakshAI
+Visit and use: [RakshAI](https://kiktro.github.io/RakshAI/)
+Share the website: `bit.ly/RakshAI`
 
 ##  Features
 
